@@ -90,12 +90,15 @@ ul li:hover .dropdown {
     display: block;
 }
 
+
+
 .dropdown li {
-    padding: 15px;
+    padding: 9px;
     position: relative;
     background-color: black;
-    left: calc(50% - 79px);
+    left: calc(50% - 68px);
     bottom: 17px;
+
 }
 
 .dropdown:before {
@@ -114,26 +117,72 @@ ul li:hover .dropdown {
 .section1 {
     width: 100%;
     background: linear-gradient(white, #e2e2e2);
-}
-
-.section1 div {
-    display: flex;
-    flex-direction: row;
+    padding: 80px 0;
 }
 
 .section1 div ul li {
     display: flex;
-    flex-direction: row;
+    align-items: center;
 }
 
 .section1 div ul li div {
     display: flex;
-    flex-direction: column;
     align-items: center;
-    padding: 120px;
+    flex-direction: column;
 }
 
+.insideSection1 h2 {
+    font-size: 50px;
+    margin-bottom: 30px;
+}
 
+.insideSection1 span {
+    color: #8de0d2;
+    font-weight: bold;
+}
 
+.insideSection1 p {
+    margin-bottom: 20px;
+    width: 450px;
+    line-height: 25px;
+}
+
+.insideSection1 a {
+    width: 200px;
+    height: 60px;
+    color: white;
+    font-size: 20px;
+    background-color: #8de0d2;
+    border-radius: 10%;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section1div1, .section1div2 {
+    font-size: 70px;
+    display: flex;
+    color: #8de0d2;
+    text-decoration: none;
+}
+
+section > div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.section1div1 a, .section1div2 a{
+    font-size: 70px;
+    display: flex;
+    color: #8de0d2;
+    text-decoration: none;
+    padding: 0 30px;
+}
+
+.section1div2 a {
+    padding-left: 80px;
+}
 
 
