@@ -1,0 +1,139 @@
+@font-face {
+    font-family: "Raleway";
+    src: url("../raleway/raleway-regular-webfont.woff") format("woff"), url("../raleway/raleway-regular-webfont.woff2") format("woff2");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "RalewayLight";
+    src: url("../raleway/raleway-light-webfont.woff") format("woff"), url("../raleway/raleway-light-webfont.woff2") format("woff2");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "RalewayBold";
+    src: url("../raleway/raleway-bold-webfont.woff") format("woff"), url("../raleway/raleway-bold-webfont.woff2") format("woff2");
+    font-weight: normal;
+}
+
+body {
+    font-family: "Raleway", sans-serif;
+    font-weight: normal;
+}
+
+.container {
+    width: 1280px;
+    margin: 0 auto;
+}
+
+header {
+    color: white;
+    background: black;
+    width: 100%;
+    font-family: "RalewayBold", sans-serif;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+header p {
+    display: flex;
+    align-self: center;
+
+}
+
+header span {
+    padding: 0 8px;
+    color: #8de0d2;
+}
+
+header nav .firma {
+    display: flex;
+    padding-right: 40px;
+}
+
+header li {
+    padding: 0 30px;
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+}
+
+.dropdown {
+    font-family: "Raleway", sans-serif;
+    position: absolute;
+    padding-top: 38px;
+}
+
+ul {
+    list-style: none;
+}
+
+.firma li {
+    position: relative;
+}
+
+ul li:hover .dropdown {
+    display: block;
+}
+
+.dropdown {
+    display: none;
+}
+
+.dropdown:hover {
+    display: block;
+}
+
+.dropdown li {
+    padding: 15px;
+    position: relative;
+    background-color: black;
+    left: calc(50% - 79px);
+    bottom: 17px;
+}
+
+.dropdown:before {
+    content: "";
+    width: 0;
+    height: 0;
+    display: block;
+    border-bottom: 13px solid black;
+    border-left: 13px solid transparent;
+    border-right: 13px solid transparent;
+    position: relative;
+    left: 24px;
+    bottom: 17px;
+}
+
+.section1 {
+    width: 100%;
+    background: linear-gradient(white, #e2e2e2);
+}
+
+.section1 div {
+    display: flex;
+    flex-direction: row;
+}
+
+.section1 div ul li {
+    display: flex;
+    flex-direction: row;
+}
+
+.section1 div ul li div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 120px;
+}
+
+
+
+
+
