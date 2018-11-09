@@ -39,6 +39,7 @@ header nav {
     padding: 20px;
 }
 
+
 header p {
     display: flex;
     align-self: center;
@@ -69,6 +70,7 @@ header a {
     position: absolute;
     padding-top: 38px;
 }
+/* Tutaj zaczyna sie wyskakujace okienko */
 
 ul {
     list-style: none;
@@ -81,14 +83,12 @@ ul {
 ul li:hover .dropdown {
     display: block;
 }
+/* Gdy najedziemy myszka na li, czyli na "Firma" to wyskakuje nam dropdown */
 
 .dropdown {
     display: none;
 }
-
-.dropdown:hover {
-    display: block;
-}
+/* Ogolnie dropdown jest znikniety*/
 
 
 
@@ -98,7 +98,6 @@ ul li:hover .dropdown {
     background-color: black;
     left: calc(50% - 68px);
     bottom: 17px;
-
 }
 
 .dropdown:before {
@@ -113,6 +112,7 @@ ul li:hover .dropdown {
     left: 24px;
     bottom: 17px;
 }
+/* Dwa powyzsze pozwalaja na zrobienie strzalki z borderow*/
 
 .section1 {
     width: 100%;
@@ -159,6 +159,7 @@ ul li:hover .dropdown {
     justify-content: center;
     align-items: center;
 }
+/* insideSection1 to napisy obok fotela */
 
 .section1div1, .section1div2 {
     font-size: 70px;
@@ -166,6 +167,7 @@ ul li:hover .dropdown {
     color: #8de0d2;
     text-decoration: none;
 }
+/* section1div1 i div2 to znaczki < i > */
 
 section > div {
     display: flex;
@@ -185,4 +187,101 @@ section > div {
     padding-left: 80px;
 }
 
+.section2div {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 20px;
+}
 
+.section2div div:first-child {
+    background-image: url("../images/box1_img.jpg");
+    width: 300px;
+    height: 200px;
+}
+
+.section2div div:nth-child(2) {
+    background-image: url("../images/box2_img.jpg");
+    width: 300px;
+    height: 200px;
+    margin: 25px;
+}
+
+.section2div div:last-child {
+    border: 1px solid gray;
+    width: 300px;
+    height: 220px;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.section2div div h3 {
+    padding: 10px;
+    padding-top: 20px;
+    font-family: RalewayBold, sans-serif;
+}
+
+.section2div .section2div2 p {
+    padding: 10px;
+    font-size: 0.85rem;
+    color: gray;
+}
+
+.clair, .margarita {
+    display: flex;
+    position: relative;
+}
+
+.clair p, .margarita p {
+    padding: 10px;
+    height: 50px;
+    font-size: 0.95rem;
+    color: black;
+    display: block;
+    font-family: RalewayBold, sans-serif;
+    width: 100%;
+    background-color: rgba(245, 245, 220, 0.3);
+    position: absolute;
+    top: 135px;
+}
+
+div.clair p:before {
+    content: "";
+    height: 7px;
+    width: 150px;
+    background-color: #8de0d2;
+    position: absolute;
+    top: 27px;
+}
+
+div.margarita p:before {
+    content: "";
+    height: 7px;
+    width: 150px;
+    background-color: #8de0d2;
+    position: absolute;
+    top: 27px;
+}
+
+div.section2div2 h3:after {
+    content: "";
+    height: 7px;
+    width: 150px;
+    background-color: #8de0d2;
+    position: absolute;
+    bottom: 328px;
+    right: 582px;
+}
+
+.section3 {
+    background-color: #e2e2e2;
+    height: 600px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+.section3 > p {
+}
