@@ -187,6 +187,8 @@ section > div {
     padding-left: 80px;
 }
 
+
+/*Sekcja druga*/
 .section2div {
     width: 100%;
     margin: 0 auto;
@@ -202,7 +204,7 @@ section > div {
     height: 200px;
 }
 
-.section2div div:nth-child(2) {
+.section2div > div:nth-child(2) {
     background-image: url("../images/box2_img.jpg");
     width: 300px;
     height: 200px;
@@ -217,7 +219,7 @@ section > div {
     padding: 10px;
 }
 
-.section2div div h3 {
+.section2div h3 {
     padding: 10px;
     padding-top: 20px;
     font-family: RalewayBold, sans-serif;
@@ -265,23 +267,418 @@ div.margarita p:before {
     top: 27px;
 }
 
-div.section2div2 h3:after {
-    content: "";
+
+.section2div2 .line {
     height: 7px;
     width: 150px;
     background-color: #8de0d2;
-    position: absolute;
-    bottom: 328px;
-    right: 582px;
+    position: relative;
+    bottom: 8px;
+    right: 0;
 }
 
+
+/* Sekcja trzecia, bloki z opcjami basic/standard/advance */
 .section3 {
     background-color: #e2e2e2;
-    height: 600px;
+    height: 700px;
     width: 100%;
     margin: 0 auto;
     padding: 50px;
+    position: relative;
 }
 
-.section3 > p {
+.section3div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+    top: 80px;
+
+}
+
+.section3 > .priceList {
+    position: relative;
+    left: 270px;
+}
+
+.section3 .priceList .underline {
+    width: 200px;
+    height: 10px;
+    background-color: #8de0d2;
+    position: relative;
+    top: 15px;
+    right: 60px;
+}
+
+.basic {
+    width: 300px;
+    height: 450px;
+    border: 1px solid black;
+    position: relative;
+    background-color: #eeeeee;
+}
+
+.standard {
+    width: 300px;
+    height: 450px;
+    border: 1px solid #8de0d2;
+    margin: 0 30px;
+    position: relative;
+    background-color: #8de0d2;
+}
+
+.advance {
+    width: 300px;
+    height: 450px;
+    border: 1px solid black;
+    position: relative;
+    background-color: #eeeeee;
+}
+
+.basic > h2, .standard > h2, .advance > h2 {
+    font-size: 1.4rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+/* Ozdobne kółko na granicy bloków z ofertami basic/standard/advance */
+.circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: relative;
+    background-color: red;
+    left: calc(50% - 25px);
+    bottom: 29px;
+}
+
+.section3div h3, .section3div h4, .section3div h5, .section3div h6 {
+    font-size: 1.2rem;
+    text-align: center;
+    position: relative;
+    top: 50px;
+    line-height: 25px;
+    padding: 5px;
+    color: gray;
+}
+
+.section3div h3, .section3div h5 {
+    background-color: lightgray;
+}
+
+.section3div h4, .section3div h6 {
+    background-color: #e2e2e2;
+}
+
+
+
+/*Kółko z ceną dla basic*/
+.basic .priceCircle {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    background-color: white;
+    position: relative;
+    left: 80px;
+    top: 30px;
+    text-align: center;
+    border: 1px solid grey;
+    display: flex;
+    flex-direction: column;
+}
+
+.basic > h2 {
+    color: #8de0d2;
+}
+
+.basic > p {
+    position: relative;
+    bottom: -135px;
+    background-color: #8de0d2;
+    text-align: center;
+    width: 100px;
+    left: 100px;
+    color: white;
+    padding: 5px;
+    border-radius: 10%;
+}
+
+.basic .priceCircle p {
+    color: lightgray;
+    position: relative;
+    top: 33px;
+}
+
+.basic div > p:first-of-type {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.basic div > p > sup {
+    font-size: 0.9rem;
+    position: relative;
+    bottom: 8px;
+}
+
+.basic .circle {
+    background-color: gray;
+    box-shadow: inset 0 0 0 12px white;
+    border: 1px solid gray;
+}
+
+/* kółko z ceną dla standard */
+.standard > p {
+    position: relative;
+    bottom: -100px;
+    background-color: white;
+    text-align: center;
+    width: 100px;
+    padding: 5px;
+    border-radius: 10%;
+    left: 100px;
+    color: #8de0d2;
+}
+
+.standard > h2 {
+    color: white;
+}
+
+.standard .priceCircle p {
+    color: lightgray;
+    position: relative;
+    top: 33px;
+}
+
+.standard div > p:first-of-type {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.standard div > p > sup {
+    font-size: 0.9rem;
+    position: relative;
+    bottom: 8px;
+}
+
+.standard .priceCircle {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    background-color: white;
+    position: relative;
+    left: 80px;
+    top: 30px;
+    text-align: center;
+    border: 1px solid grey;
+    display: flex;
+    flex-direction: column;
+}
+
+.standard .circle {
+    background-color: white;
+    box-shadow: inset 0 0 0 12px #8de0d2;
+    border: 1px solid #8de0d2;
+}
+
+
+/* kółko z ceną dla advance */
+.advance > p {
+    position: relative;
+    bottom: -65px;
+    background-color: #8de0d2;
+    text-align: center;
+    width: 100px;
+    left: 100px;
+    color: white;
+    padding: 5px;
+    border-radius: 10%;
+}
+
+.advance > h2 {
+    color: #8de0d2;
+}
+
+
+.advance .priceCircle p {
+    color: lightgray;
+    position: relative;
+    top: 33px;
+}
+
+.advance div > p:first-of-type {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.advance div > p > sup {
+    font-size: 0.9rem;
+    position: relative;
+    bottom: 8px;
+}
+
+.advance .priceCircle {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    background-color: white;
+    position: relative;
+    left: 80px;
+    top: 30px;
+    text-align: center;
+    border: 1px solid grey;
+    display: flex;
+    flex-direction: column;
+}
+
+.advance .circle {
+    background-color: gray;
+    box-shadow: inset 0 0 0 12px white;
+    border: 1px solid gray;
+}
+
+/*SEKCJA 4*/
+.section4 {
+    height: 550px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    padding: 50px;
+}
+
+.section4div {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin: 0 auto;
+    top: 50px;
+}
+
+.priceList {
+    position: relative;
+    left: 270px;
+}
+
+.section4 .priceList .underline {
+    width: 200px;
+    height: 10px;
+    background-color: #8de0d2;
+    position: relative;
+    top: 15px;
+    right: 75px;
+}
+
+.form {
+    width: 600px;
+    height: 500px;
+    padding: 15px;
+    position: relative;
+    left: -60px;
+}
+
+.form input[type="text"], .form input[type="email"] {
+    border: 1px solid #8de0d2;
+    width: 600px;
+    height: 60px;
+    font-size: 2rem;
+
+}
+
+.form input[name="message"] {
+    padding-bottom: 150px;
+    padding-top: 30px;
+}
+
+.form ::placeholder {
+    color: lightgray;
+}
+
+.form p {
+    padding: 10px;
+}
+.form p:last-child ::placeholder {
+    text-align: start;
+}
+
+.side {
+    display: flex;
+    flex-direction: column;
+    height: 350px;
+    position: relative;
+    bottom: 80px;
+    right: 0;
+
+}
+
+.side img {
+    width: 250px;
+}
+
+.section4div .send {
+    display: block;
+    width: 300px;
+    height: 80px;
+    color: white;
+    background-color: #8de0d2;
+    border-radius: 10%;
+    font-weight: bold;
+    font-size: 2rem;
+    text-align: center;
+    padding: 20px;
+    margin-top: 35px;
+    position: relative;
+    bottom: 30px;
+    right: 0;
+}
+
+.side input {
+    margin-top: 40px;
+}
+
+.side .agree {
+    display: block;
+    width: 300px;
+    height: 50px;
+    position: relative;
+    bottom: 20px;
+    right: -20px;
+    font-size: 1.3rem;
+    color: lightgray;
+}
+
+/*FOOTER*/
+footer {
+    width: 100%;
+    height: 80px;
+    margin: 0 auto;
+    background-color: white;
+    font-size: 0.9rem;
+    color: lightgray;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+footer .images {
+    display: flex;
+    position: relative;
+    left: 100px;
+}
+
+footer p:last-child {
+    position: relative;
+    right: 430px;
+    font-size: 1.1rem;
+}
+
+footer p:last-child span {
+    font-weight: bold;
+}
+
+footer p:first-child {
+    position: relative;
+    left: 290px;
 }
