@@ -311,6 +311,8 @@ div.margarita p:before {
     right: 60px;
 }
 
+/* Zauważ, że te boksy wyglądają tak samo, czemu nie zrobić ich na jednej klasie 
+a ten środkowy po prostu wyróżnić jakąś dodatkową klasą. */
 .basic {
     width: 300px;
     height: 450px;
